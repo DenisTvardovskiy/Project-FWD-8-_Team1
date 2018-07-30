@@ -1,0 +1,100 @@
+$name1 = filter_input(INPUT_POST, 'name');
+$surname1 = filter_input(INPUT_POST, 'surname');
+$subject1 = filter_input(INPUT_POST, 'subject');
+$mail1 = filter_input(INPUT_POST, 'mail');
+$phone1 = filter_input(INPUT_POST, 'phone');
+$message1 = filter_input(INPUT_POST, 'message');
+
+if (!empty($name1)) {
+  if (!empty($surname1)) {
+    if (!empty($mail1)) {
+      if (!empty($phone1)) {
+        if (!empty($subject1)) {
+          if (!empty($message1)) {
+            $host = "localhost";
+            $dbusername = "root";
+            $dbpassword = "";
+            $dbname = "contactform";
+
+
+          // Create connection 
+$conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
+
+if (mysqli_connect_error()){
+    die('Connect Error ('. mysqli_connect_error() .')' 
+    . mysqli_connect_error());
+}
+else {
+    $sql = "INSERT INTO contactformdata (name, surname, e-mail, phone, subject, message) 
+    values ('$name1','$surname1','$mail1','$phone1','$subject1',$message1)";
+    if ($conn->query($sql)) {
+        echo "Інформація успішно відправлена";
+    }
+    else {
+        echo "Error: ". $sql . "<br>". $conn->error;
+    }
+    $conn->close();
+}
+}    
+          else {
+            echo "Введіть що вас цікавить";
+            die();
+          }
+        }
+      }  
+     else {
+        echo "Вам потрібно вказати номер телефону";
+        die(); 
+     } 
+    }  
+  }  
+}
+else {
+    echo "Поле з іменем має бути заповненим";
+    die();
+}
+
+
+---------------------------------------------------------
+
+
+
+<?php
+ 
+
+ $username = filter_input(INPUT_POST, 'username' );
+ $password = filter_input(INPUT_POST, 'password');
+    if (!empty($username)) {
+        if (!empty($password)) {
+           $host = "localhost";
+           $dbusername = "root";
+           $dbpassword ="";
+           $dbname = "login";
+
+           $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
+
+           if (myspli_connect_error()) {
+               die('Connect Error ('. mysqli_connect_errno() .') '
+               . mysqli_connect_error());
+           }
+           else {
+               $spl = "INSERT INTO users (username, password)
+               values ('$username, $password') ";
+               if ($conn->query($sql)) {
+                   echo "New record is inserted sucessfully";
+               }
+               else {
+                   echo "Error: ". $sql . "<br>". $conn->error;
+               }
+               $conn->close();
+           }
+        }
+        else {
+            echo "Password should not be empty";
+            die;
+        } 
+    }
+    else {
+        echo "Username should not be empty";
+        die;
+    }
