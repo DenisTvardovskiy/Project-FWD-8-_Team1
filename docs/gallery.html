@@ -25,6 +25,10 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="css/gallery.css">
+  
+  <!--gallery prewiew baguette-->
+  <link rel="stylesheet" href="lib/baguetteBox.js-dev/dist/baguetteBox.min.css">
+
 
  
 </head>
@@ -38,45 +42,29 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="index.html">
-          <img src="img/logo.png" alt="" title="" /></img>
-        </a>
+        <a href="index.html"><img src="img/logo.png" alt="" title="" /></img></a>
         
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active">
-            <a href="rooms.html">Номери</a>
-          </li>
-          <li>
-            <a href="restaurant.html">Ресторан</a>
-          </li>
-          <li>
-            <a href="spa.html">SPA</a>
-          </li>
-          <li>
-            <a href="conferencehall.html">Конференц зала</a>
-          </li>
-          <li>
-            <a href="childrenroom.html">Дитяча кімната</a>
-          </li>
-          <li>
-            <a href="gallery.html">Галерея</a>
-          </li>
-          <li>
-            <a href="prices.html">Ціни</a>
-          </li>
-          <li>
-            <a href="contacts.html">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- #nav-menu-container -->
-    </div>
-  </header>
-  <!-- #header -->
+          <li class="menu-active"><a href="rooms.html">Номери</a></li>
 
+          <li class="menu-has-children"><a href="">Про нас</a>
+            <ul>
+              <li><a href="restaurant.html">Ресторан</a></li>
+              <li><a href="conferencehall.html">Конференц зала</a></li>
+              <li><a href="childrenroom.html">Дитяча кімната</a></li>
+              <li><a href="spa.html">SPA</a></li>
+            </ul>
+          </li>         
+          <li><a href="gallery.html">Галерея</a></li>
+          <li><a href="prices.html">Ціни</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
 
   <main id="main">
     <!--==========================
@@ -84,106 +72,124 @@
     ============================-->
     <section id="gallary-fone">
       <div class="container">
-        <div class="card-row clearfix">
-          <div class="row clearfix ">
+        <div class="card-row clearfix baguette">
+          <div class="row clearfix baguette">
             <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-              <div class="card">
+              <div class="card thumbnail">
+                <a class="lightbox" href="img/thumbnails/2-1024x576.jpg"></a>
                 <img src="img/render/2-1024x576.jpg" alt="" height="" width="100%">
               </div>
             </div>
             <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-              <div class="card">
+              <div class="card thumbnail">
+                  <a class="lightbox" href="img/thumbnails/3-1024x576.jpg"></a>
                 <img src="img/render/3-1024x576.jpg" alt="" height="" width="100%">
               </div>
             </div>
             <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-              <div class="card">
+              <div class="card thumbnail">
+                  <a class="lightbox" href="img/thumbnails/4-1024x576.jpg"></a>
                 <img src="img/render/4-1024x576.jpg" alt="" height="" width="100%">
               </div>
             </div>
           </div>
         </div>
-        <div class="row clearfix">
+        <div class="row clearfix baguette">
           <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="card">
-              <img src="img/restaurant/5-1024x576.jpg" alt="" height="" width="100%">
+            <div class="card thumbnail">
+                <a class="lightbox" href="img/thumbnails/5-1024x576.jpg"></a>
+              <img src="img/render/5-1024x576.jpg" alt="" height="" width="100%">
             </div>
           </div>
           <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="card">
-              <img src="img/restaurant/6-1024x576.jpg" alt="" height="" width="100%">
+            <div class="card thumbnail">
+                <a class="lightbox" href="img/thumbnails/6-1024x576.jpg"></a>
+              <img src="img/render/6-1024x576.jpg" alt="" height="" width="100%">
             </div>
           </div>
           <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="card">
-              <img src="img/spa/7-1-1024x576.jpg" alt="" height="" width="100%">
-            </div>
-          </div>
-        </div>
-        <div class="row clearfix">
-          <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="card">
-              <img src="img/restaurant/7-1024x576.jpg" alt="" height="" width="100%">
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="card">
-              <img src="img/restaurant/9-1-1024x576.jpg" alt="" height="" width="100%">
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="card">
-              <img src="img/spa/9-1024x576.jpg" alt="" height="" width="100%">
+            <div class="card thumbnail">
+                <a class="lightbox" href="img/thumbnails/7-1-1024x576.jpg"></a>
+              <img src="img/render/7-1-1024x576.jpg" alt="" height="" width="100%">
             </div>
           </div>
         </div>
-        <div class="row clearfix">
+        <div class="row clearfix baguette">
           <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="card">
-              <img src="img/restaurant/10-1-1024x576.jpg" alt="" height="" width="100%">
+            <div class="card thumbnail">
+                <a class="lightbox" href="img/thumbnails/7-1024x576.jpg"></a>
+              <img src="img/render/7-1024x576.jpg" alt="" height="" width="100%">
             </div>
           </div>
           <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="card">
-              <img src="img/spa/10-1024x576.jpg" alt="" height="" width="100%">
+            <div class="card thumbnail">
+                <a class="lightbox" href="img/thumbnails/9-1-1024x576.jpg"></a>
+              <img src="img/render/9-1-1024x576.jpg" alt="" height="" width="100%">
             </div>
           </div>
           <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="card">
-              <img src="img/restaurant/11-1024x576.jpg" alt="" height="" width="100%">
+            <div class="card thumbnail">
+                <a class="lightbox" href="img/thumbnails/9-1024x576.jpg"></a>
+              <img src="img/render/9-1024x576.jpg" alt="" height="" width="100%">
             </div>
           </div>
         </div>
-        <div class="row clearfix">
+        <div class="row clearfix baguette">
           <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="card">
+            <div class="card thumbnail">
+                <a class="lightbox" href="img/thumbnails/10-1-1024x576.jpg"></a>
+              <img src="img/render/10-1-1024x576.jpg" alt="" height="" width="100%">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="card thumbnail">
+                <a class="lightbox" href="img/thumbnails/10-1024x576.jpg"></a>
+              <img src="img/render/10-1024x576.jpg" alt="" height="" width="100%">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="card thumbnail">
+                <a class="lightbox" href="img/thumbnails/2-1024x576.jpg"></a>
+              <img src="img/render/11-1024x576.jpg" alt="" height="" width="100%">
+            </div>
+          </div>
+        </div>
+        <div class="row clearfix baguette">
+          <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="card thumbnail">
+                <a class="lightbox" href="img/thumbnails/rakyrs_10000-1024x577.jpg"></a>
               <img src="img/render/rakyrs_10000-1024x577.jpg" alt="" height="" width="100%">
             </div>
           </div>
           <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="card">
+            <div class="card thumbnail">
+                <a class="lightbox" href="img/thumbnails/rakyrs_100010-1024x577.jpg"></a>
               <img src="img/render/rakyrs_100010-1024x577.jpg" alt="" height="" width="100%">
             </div>
           </div>
           <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="card">
+            <div class="card thumbnail">
+                <a class="lightbox" href="img/thumbnails/rakyrs_100011-1024x577.jpg"></a>
               <img src="img/render/rakyrs_100011-1024x577.jpg" alt="" height="" width="100%">
             </div>
           </div>
         </div>
-        <div class="row clearfix">
+        <div class="row clearfix baguette">
           <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="card">
+            <div class="card thumbnail">
+                <a class="lightbox" href="img/thumbnails/rakyrs_10002-1024x577.jpg"></a>
               <img src="img/render/rakyrs_10002-1024x577.jpg" alt="" height="" width="100%">
             </div>
           </div>
           <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="card">
+            <div class="card thumbnail">
+                <a class="lightbox" href="img/thumbnails/rakyrs_10003-1024x577.jpg"></a>
               <img src="img/render/rakyrs_10003-1024x577.jpg" alt="" height="" width="100%">
             </div>
           </div>
           <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-            <div class="card">
+            <div class="card thumbnail">
+                <a class="lightbox" href="img/thumbnails/rakyrs_10007-1-1024x577.jpg"></a>
               <img src="img/render/rakyrs_10007-1-1024x577.jpg" alt="" height="" width="100%">
             </div>
           </div>
@@ -203,7 +209,7 @@
               ніби ви опинилися в казці. Саме в такому мальовничому місці і розташований <span class="gold">  готель  Vilson.</span></p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Забронювати</a>
+            <a class="cta-btn align-middle" href="prices.html">Забронювати</a>
           </div>
         </div>
 
@@ -259,6 +265,11 @@
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
 
+  <!--gallery prewiew baguette-->
+  <script> baguetteBox.run('.baguette'); </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js' async></script>
+  <script src="lib/baguetteBox.js-dev/src/baguetteBox.js"  async></script>
+  <script>const baguetteBox = require('baguettebox.js');</script>
 </body>
 
 </html>
