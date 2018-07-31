@@ -11,9 +11,9 @@ if (isset($_POST['mail'])){
         echo "Please go back and fix these errors.<br /><br />";
         die();
    }
-    if(!isset($_POST['name']) 
-        !isset($_POST['mail']) 
-        !isset($_POST['subject'])
+    if(!isset($_POST['name']) ||
+        !isset($_POST['mail']) ||
+        !isset($_POST['subject']) ||
        !isset($_POST['message'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
