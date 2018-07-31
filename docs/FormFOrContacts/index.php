@@ -71,7 +71,7 @@
               <div class="icon"><a href=""><i class="fas fa-parking"></i></a></div>
               <h4 class="title"><a href="">ПАРКОВКА</a></h4>
               <p class="description">Готель VILSON має свою власну парковку для <strong>клієнтів</strong></p>
-            </div>
+            </div> 
           </div>
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
             <div class="box rounded">
