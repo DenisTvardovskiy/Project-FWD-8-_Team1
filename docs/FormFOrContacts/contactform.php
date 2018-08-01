@@ -11,9 +11,9 @@ if (isset($_POST['mail'])){
         echo "Please go back and fix these errors.<br /><br />";
         die();
    }
-    if(!isset($_POST['name']) ||
-        !isset($_POST['mail']) ||
-        !isset($_POST['subject']) ||
+    if(!isset($_POST['name']) AND 
+        !isset($_POST['mail']) AND
+        !isset($_POST['subject']) AND 
        !isset($_POST['message'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
@@ -24,7 +24,7 @@ if (isset($_POST['mail'])){
 
     $error_message = "";
     $mail_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
-    if(!preg_match($mail_exp,$mail_from)) {
+    if(!preg_match($mail_exp,$mail_form)) {
         $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
       }
      
@@ -33,9 +33,7 @@ if (isset($_POST['mail'])){
       if(!preg_match($string_exp,$name)) {
         $error_message .= 'The First Name you entered does not appear to be valid.<br />';
       }
-      if(!preg_match($string_exp,$subject)) {
-        $error_message .= 'The subject you entered does not appear to be valid.<br />';
-      }
+     
      
       if(strlen($message) < 2) {
         $error_message .= 'The Comments you entered do not appear to be valid.<br />';
@@ -52,21 +50,22 @@ if (isset($_POST['mail'])){
           $bad = array("content-type","bcc:","to:","cc:","href");
           return str_replace($bad,"",$string);
         }
-     
+      
          
-     
-        $mail_message .= "First Name: ".clean_string($first_name)."\n";
-        $mail_message .= "Email: ".clean_string($mail_from)."\n";
+    }
+        $mail_message .= "First Name: ".clean_string($name)."\n";
+        $mail_message .= "Email: ".clean_string($mail_form)."\n";
         $mail_message .= "Subject: ".clean_string($subject)."\n";
         $mail_message .= "Message: ".clean_string($message)."\n";
      
     // create email headers
-    $headers = 'From: '.$mail_from."\r\n".
-    'Reply-To: '.$mail_from."\r\n" .
+    $headers = 'From: '.$mail_form."\r\n".
+    'Reply-To: '.$mail_form."\r\n" .
     'X-Mailer: PHP/' . phpversion();
     @mail($mail_to, $mail_subject, $mail_message, $headers); 
 
-$servername = "localhost";
+
+    $servername = "localhost";
 $dbusername = "root";
 $dbpassword = "";
 $dbname = "forms";
@@ -118,12 +117,14 @@ $sql = "INSERT INTO $dbtablename(name, email, subject, message)
 
     $conn->close();
 
+   
     function test_input($data)
-{
-   $data = trim($data);
-   $data = stripslashes($data);
-   $data = htmlspecialchars($data);
-   return $data;
-}
-?>
+    {
+       $data = trim($data);
+       $data = stripslashes($data);
+       $data = htmlspecialchars($data);
+       return $data;
+    }
 
+ 
+?>
