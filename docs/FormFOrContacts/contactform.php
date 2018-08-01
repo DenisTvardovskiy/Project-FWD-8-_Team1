@@ -126,5 +126,7 @@ $sql = "INSERT INTO $dbtablename(name, email, subject, message)
        return $data;
     }
 
+    header("Location: index.php?sended");
+
  
 ?>
