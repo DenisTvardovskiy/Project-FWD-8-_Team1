@@ -23,7 +23,7 @@ if (isset($_POST['mail'])){
     $message= $_POST['message']; // required
 
     $error_message = "";
-    $mail_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+    $mail_exp = '/^[a-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
     if(!preg_match($mail_exp,$mail_form)) {
         $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
       }
