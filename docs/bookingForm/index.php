@@ -64,9 +64,11 @@
     <section class="booking-agile">
 <h1>Vilson Hotel Booking</h1>
 <div class="headbooking-agile">
+
 			<div class="bookingleft-agile">
 				<h2>ЗАПОВНІТЬ ФОРМУ ДЛЯ БРОНЮВАННЯ</h2>
-					<form action="#" method="get">
+				
+					<form action="proces.php" method="get">
 						<div class="arrival-agile">
 							<p>Заселення</p>
 						
@@ -89,7 +91,7 @@
 									</select>
 							</div>
 							<div class="room-agile">
-								<p>Номери</p>
+								<p>Номери*</p>
 									<select>
 									  <option value="">Номери</option>
 									  <option value="dbl">DBL</option>
@@ -107,14 +109,19 @@
 							  <option value="child">3</option>
 							</select>
 							</div>
+							<div class="name-agile">
+								<p>Моб. номер</p>
+								<input type="text" name="number" placeholder="Ваш мобыльний телефон" required>
+							</div>
+
 							<div class="clear"></div>
 							<div class="name-agile">
 								<p>Ім'я</p>
-								<input type="text" name="uname" placeholder="Ваше Ім'я">
+								<input type="text" name="uname" placeholder="Ваше Ім'я" required>
 							</div>
 							<div class="last-agile">
 								<p>Прізвище	</p>
-								<input type="text" name="lname" placeholder="Ваше Прізвище" >
+								<input type="text" name="lname" placeholder="Ваше Прізвище" required >
 							</div>
 							<div class="clear"></div>
 								<div class="submit-agile">
@@ -122,7 +129,9 @@
 								</div>
 								<div class="clear"></div>
 						</form>
-				</div>
+						</div>
+				
+				
 <div class="bookingright-agile">
 <h3>Контакти</h3>
 			<div class="mobile-agile">
@@ -151,7 +160,22 @@
 				</div>
 				
 			</div>
+			
+			<div class="clear"></div>
+			<h3>Номери</h3>
+
+			<ul>
+				<li><a href="../dblprice.html">DBL - двомісний стандартний</a>  </li>
+			<li><a href="../suiteprice.html">Suite - чорирьохмісний</a> </li>
+			<li><a href="../appartamentsprice.html">Appartament - апартаменти</a></li>
+		</ul>
+		<div class="box"></div>
 </div>
+
+
+
+
+			
 <div class="clear"></div>
 </div>
 

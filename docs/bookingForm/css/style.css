@@ -97,7 +97,7 @@ img{
     background: rgba(16, 15, 15, 0.55);
 	padding: 2em 2em 21px 2em;
 	margin: 0 0 10px 0;
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .bookingright-agile{
@@ -105,8 +105,9 @@ img{
     float: left;
     background: rgba(31, 24, 20, 0.43);
     padding: 2em;
-    margin-left: 1%;
-    box-sizing: border-box;
+   
+	box-sizing: border-box;
+	margin: 0 0 10px 1% ;
 }
 .arrival-agile {
     width: 50%;
@@ -420,7 +421,7 @@ footer a:hover{
 /*--responsive--*/
 @media(max-width:1920px){
 	.date {
-		background: url(../images/calendar.png)no-repeat 265px 13px;
+		background: url(../images/calendar.png)no-repeat 265px 13x;
 		cursor: pointer;
 	}
 	
@@ -529,9 +530,7 @@ footer a:hover{
 	.offers-agile span {
 		margin: 2em 0 1.5em;
 	}
-	.bookingright-agile h3{
-		margin: 0 0 1.35em;
-	}
+
 }
 @media(max-width:991px){
 	.date {
@@ -791,6 +790,10 @@ footer a:hover{
 	.offers li a {
 		font-size: 12px;
 	}
+}
+.box{
+	display: block;
+	height: 232px;
 }
 
 /*--/responsive--*/
