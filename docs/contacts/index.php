@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Regna Bootstrap Template</title>
+  <title>VILSON Hotel | Комфортний відпочинок для родини</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -36,23 +36,29 @@
 
       <div id="logo" class="pull-left">
         <a href="../index.html"><img src="../img/logo.png" alt="" title="" /></img></a>
-       
+        
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="../rooms.html">Номери</a></li>
-          <li><a href="../restaurant.html">Ресторан</a></li>
-          <li><a href="../spa.html">SPA</a></li>
-          <li><a href="../conferencehall.html">Конференц зала</a></li>
-          <li><a href="../childrenroom.html">Дитяча кімната</a></li>
-          <li><a href="../gallery.html">Галерея</a></li>
-          <li><a href="../prices.html">Ціни</a></li>
+          <li><a href="../rooms/rooms.html">Номери</a></li>
+
+          <li class="menu-has-children"><a href="">Про нас</a>
+            <ul>
+              <li><a href="../about/restaurant/restaurant.html">Ресторан</a></li>
+              <li><a href="../about/conferencehall/conferencehall.html">Конференц зала</a></li>
+              <li><a href="../about/childrenroom/childrenroom.html">Дитяча кімната</a></li>
+              <li><a href="../about/spa/spa.html">SPA</a></li>
+            </ul>
+          </li>         
+          <li><a href="../gallery/gallery.html">Галерея</a></li>
+          <li><a href="../prices/prices.html">Ціни</a></li>
           <li><a href="index.php">Контакти</a></li>
         </ul>
-      </nav><!-- #nav-menu-container -->
+      </nav>
     </div>
-  </header><!-- #header -->
+  </header>
+  <!-- #header -->
 
 
   <main id="main">
