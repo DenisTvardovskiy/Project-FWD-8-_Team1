@@ -130,12 +130,12 @@
   Поля з зiрочкою ОБОВ'ЯЗКОВІ для заповнення *
 </div>
     <form action="contactform.php" method="post">
-        <input type="text" name="name" placeholder="Ваше Ім'я *" required>
+        <input type="text" name="name" placeholder="Ваше Ім'я *">
         
-        <input type="text" name="mail" placeholder="Ваша електронна адреса*" required>
+        <input type="text" name="mail" placeholder="Ваша електронна адреса*" >
         
         <input type="text" name="subject" placeholder="Тема">
-        <textarea name="message" placeholder="Повідомлення... *" required></textarea> 
+        <textarea name="message" placeholder="Повідомлення... *" ></textarea> 
         
        
         <button type="submit" class="btn btn-success" name="submit">Відправити</button>

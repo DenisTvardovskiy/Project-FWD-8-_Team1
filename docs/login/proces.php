@@ -20,8 +20,10 @@ $result = mysqli_query($conn, "select * from users where username = '$username' 
         or die("Failed to query database".mysqli_error($conn));
 $row = mysqli_fetch_array($result);
 if ($row['username'] == $username && $row['password'] == $password) {
-   echo "Login success!!! Welcome ".$row['username'];
-} else {
-    echo "Failed to login!";
+  header("Location:../adminPage/admin.php");
+}
+ else {
+   header("Location:../errorPage/error.html");
+    
 }
 ?>

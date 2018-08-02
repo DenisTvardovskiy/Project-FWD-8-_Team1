@@ -126,7 +126,9 @@ img{
 }
 .date{
 	background: url(../images/calendar.png)no-repeat 225px 13px;
+	
 	cursor:pointer;
+	
 }
 input#datepicker {
     font-size: 15px;

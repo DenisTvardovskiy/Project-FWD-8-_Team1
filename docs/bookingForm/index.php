@@ -69,7 +69,10 @@
 					<form action="#" method="get">
 						<div class="arrival-agile">
 							<p>Заселення</p>
-							<input placeholder="Оберіть День" class="date" id="datepicker" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+						
+							<input placeholder="Оберіть День" class="date" id="datepicker" 
+							 type="text" value="" onfocus="this.value = '';" 
+							 onblur="if (this.value == '') {this.value = '';}" required=""/>
 						</div>
 						<div class="departure-agile">
 							<p>Виселення</p>
