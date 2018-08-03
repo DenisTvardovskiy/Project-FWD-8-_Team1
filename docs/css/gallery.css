@@ -7,7 +7,7 @@ body {
 .carousel,
 .item,
 .active {
-  height: 100%;
+  height: ;
   width: 100%;
 }
 
@@ -114,6 +114,78 @@ body {
         display:flex;
         justify-content: flex-end;
 }*/
+
+/*.container .row .carousel-inner {
+  position: ;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
+
+/*add commets and */
+div.row.about-container-coment{
+  display: flex;
+  margin:auto;
+  height:350px;
+  transition: 2s;
+  font-family: 'Playfair Display', serif; 
+  font-size: 22px;
+  text-align: center;
+  position: static;
+  justify-content: center;
+
+}
+#hero .hero-container .carousel-caption{
+  display: flex;
+  height: 55%;
+  font-size: 8vw;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+ /* margin-bottom: 200px;*/
+  text-decoration: #000;
+  text-shadow:1px 1px 1px black;
+}
+
+
+
+.card-header{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-decoration: none;
+  width:100%;
+}
+
+/*Rools*/
+table, tr, td {
+  border:1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+table{
+  font-family: 'Playfair Display', serif;
+  width:80%;
+ margin: auto;
+ margin-bottom:30px;
+}
+#accordion .card-body{
+  width:80%;
+  margin: auto;
+}
+#accordion div.card{
+  width: 100%;
+}
+/*container-video*/
+div.container-video {
+  margin: auto;
+  width: 500px;
+  margin-top:50px;
+  margin-bottom: 50px;
+  
+  
+}
 
 @media only screen and (max-width: 600px) and (min-width: 400px)  {
     .container .img{
