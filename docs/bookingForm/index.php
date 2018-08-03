@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Regna Bootstrap Template</title>
+  <title>VILSON Hotel | Комфортний відпочинок для родини</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -69,7 +69,10 @@
 					<form action="#" method="get">
 						<div class="arrival-agile">
 							<p>Заселення</p>
-							<input placeholder="Оберіть День" class="date" id="datepicker" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+						
+							<input placeholder="Оберіть День" class="date" id="datepicker" 
+							 type="text" value="" onfocus="this.value = '';" 
+							 onblur="if (this.value == '') {this.value = '';}" required=""/>
 						</div>
 						<div class="departure-agile">
 							<p>Виселення</p>

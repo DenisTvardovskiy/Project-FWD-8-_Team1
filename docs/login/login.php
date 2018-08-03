@@ -15,11 +15,11 @@
   <form action="proces.php" method= "POST">
     <div class="form-group">
       <label>Username:</label>
-      <input type="text" class="form-control"  placeholder="Введіть логін" name="username">
+      <input type="text" class="form-control"  placeholder="Введіть логін" name="username" required>
     </div>
     <div class="form-group">
       <label>Password:</label>
-      <input type="password" class="form-control"  placeholder="Введіть пароль" name="password">
+      <input type="password" class="form-control"  placeholder="Введіть пароль" name="password" required>
     </div>
     
     <button type="submit" class="btn btn-success">Підтвердити</button>

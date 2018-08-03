@@ -23,12 +23,12 @@ if (isset($_POST['mail'])){
     $message= $_POST['message']; // required
 
     $error_message = "";
-    $mail_exp = '/^[a-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+    $mail_exp = '/^[a-z0-9._%-]+@[a-z0-9.-]+\.[a-z]{2,4}$/';
     if(!preg_match($mail_exp,$mail_form)) {
         $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
       }
      
-        $string_exp = "/^[A-Za-z .'-]+$/";
+        $string_exp = "/^[A-Za-z .'-]{3,55}+$/";
      
       if(!preg_match($string_exp,$name)) {
         $error_message .= 'The First Name you entered does not appear to be valid.<br />';
@@ -88,23 +88,7 @@ If ($conn->connect_error) {
     die("connection failed :" . $conn->connetc_error);
 }
 
-if (empty($name1)) {
-    echo "Fill ur name ";
-    die();
-}
 
-if (empty($mail1)) {
-    echo "Fill ur mail ";
-    die();
-}
-if (empty($subject1)) {
-    echo "Fill subject ";
-    die();
-}
-if (empty($message1)) {
-    echo "write message for us ";
-    die();
-}
 
 $sql = "INSERT INTO $dbtablename(name, email, subject, message)
     VALUES ('$name1', '$mail1', '$subject1', '$message1')";
