@@ -115,6 +115,46 @@ body {
         justify-content: flex-end;
 }*/
 
+/*.container .row .carousel-inner {
+  position: ;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
+
+/*add commets and */
+div.row.about-container-coment{
+  margin-left:33%;
+  height:350px;
+  transition: 2s;
+  font-family: 'Playfair Display', serif; 
+  font-size: 24px;
+  text-align: center;
+  position: static;
+
+}
+#hero .hero-container .carousel-caption{
+  font-size: 140px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: absolute;
+  margin-bottom: 200px;
+  text-decoration: #000;
+  text-shadow:1px 1px 1px black;
+  transition-delay: 1s;
+
+}
+
+.card-header{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-decoration: none;
+  width:100%;
+}
+
 @media only screen and (max-width: 600px) and (min-width: 400px)  {
     .container .img{
         display: flex;
