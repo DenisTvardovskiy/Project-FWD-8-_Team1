@@ -25,11 +25,14 @@
   <!-- Main Stylesheet File -->
   <link href="../css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/gallery.css">
+  <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   
   <!--gallery prewiew baguette-->
   <link rel="stylesheet" href="../lib/baguetteBox.js-dev/dist/baguetteBox.min.css">
-   <link rel="stylesheet" href="../lib/Magnific-Popup-master/Magnific-Popup-master/dist/magnific-popup.css">
+  <link rel="stylesheet" href="../lib/Magnific-Popup-master/Magnific-Popup-master/dist/magnific-popup.css">
 
+  <!-- HTML imports by JS -->
+  <link rel="import" href="../import/header.html">
 
  
 </head>
@@ -39,33 +42,7 @@
   <!--==========================
   Header
   ============================-->
-  <header id="header">
-    <div class="container">
-
-      <div id="logo" class="pull-left">
-        <a href="../index.html"><img src="../img/logo.png" alt="" title="" /></img></a>
-        
-      </div>
-
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li><a href="../rooms/rooms.html">Номери</a></li>
-
-          <li class="menu-has-children"><a href="">Про нас</a>
-            <ul>
-              <li><a href="../about/restaurant/restaurant.html">Ресторан</a></li>
-              <li><a href="../about/conferencehall/conferencehall.html">Конференц зала</a></li>
-              <li><a href="../about/childrenroom/childrenroom.html">Дитяча кімната</a></li>
-              <li><a href="../about/spa/spa.html">SPA</a></li>
-            </ul>
-          </li>         
-          <li><a href="gallery.html">Галерея</a></li>
-          <li><a href="../prices/prices.html">Ціни</a></li>
-          <li><a href="../contacts/index.php">Контакти</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div id="import-header"></div>
   <!-- #header -->
 
   <main id="main">
@@ -310,6 +287,9 @@
   <!-- Template Main Javascript File -->
   <script src="../js/main.js"></script>
 
+  <!-- HTML Imports JavaScript File -->
+  <script src="../js/import.js"></script>
+
   <!--gallery prewiew baguette-->
   
   <script src='https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js' async></script>
@@ -318,6 +298,6 @@
  <!-- <script>const baguetteBox = require('baguettebox.js');</script>
   <script> baguetteBox.run('.baguette'); </script>-->
   <script src='../js/gControl.js'></script>
-  </body>
-
+  
+</body>
 </html>
