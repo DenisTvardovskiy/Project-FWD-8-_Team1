@@ -7,7 +7,7 @@ body {
 .carousel,
 .item,
 .active {
-  height: ;
+  
   width: 100%;
 }
 
@@ -15,7 +15,6 @@ body {
   height: 100%;
   width: 100%;
 }
-
 
 
 .card img {
@@ -48,49 +47,14 @@ body {
     margin: 100px 0  0;
 }
 #call-to-action{
-    margin-top:30px;
+  
 }
-
-/* baguetteBox*/
-.baguette .thumbnail {
-    padding: 0;
-    background-color: #fff;
-    border-radius: 4px;
-    border: none;
-    transition: 0.15s ease-in-out;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-   }
-   
-   .baguette .thumbnail:hover {
-    transform: translateY(-10px) scale(1.02);
-   }
-   
-   .baguette .lightbox img {
-    border-radius: 4px 4px 0 0;
-   }
-   
-   .baguette .caption{
-    padding: 26px 30px;
-    text-align: center;
-   }
-   
-   .baguette .caption h3 {
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 0;
-   }
-   
-   .baguette .caption p {
-    font-size: 12px;
-    color: #7b7d7d;
-    margin: 0;
-   }
-
-/*end*/
 
 /*main page*/
 .wall {
     display:flex;
+    width: 100%;
+    margin: auto;
 }
 .wall img {
     box-align:center;
@@ -100,10 +64,15 @@ body {
     margin-right: 0;
     margin-left: 0;
     flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    padding: 10px;
 
 }
 #about .about-container-fourU  .text {
-    margin: 30px 0 0px 30px;
+    margin: 30px 22px 0px 30px;
+    text-align: justify;
+    
 }
 .row about-container-fourU .title{
     margin-left: 30px;
@@ -130,7 +99,6 @@ div.row.about-container-coment{
   height:350px;
   transition: 2s;
   font-family: 'Playfair Display', serif; 
-  font-size: 22px;
   text-align: center;
   position: static;
   justify-content: center;
@@ -173,6 +141,7 @@ table{
 #accordion .card-body{
   width:80%;
   margin: auto;
+  max-width: 960px;
 }
 #accordion div.card{
   width: 100%;
@@ -180,13 +149,16 @@ table{
 /*container-video*/
 div.container-video {
   margin: auto;
-  width: 500px;
-  margin-top:50px;
-  margin-bottom: 50px;
-  
-  
+  width: 60%;
+  margin-top:100px;
+  margin-bottom:100px; 
+  max-width: 960px;
 }
 
+video{
+  width:100%;
+  margin:auto;
+}
 @media only screen and (max-width: 600px) and (min-width: 400px)  {
     .container .img{
         display: flex;
@@ -200,7 +172,7 @@ div.container-video {
 
 @media only screen and (max-width: 600px) and (min-width: 400px)  {
     #about .about-container-fourU  .text{
-        margin: 30px 0 10px 10px;
+        margin: 30px 10px 10px 10px;
     }
     
 }
@@ -216,7 +188,10 @@ div.container-video {
     overflow: hidden;
     position: fixed;
     background: #0b0b0b;
-    opacity: 0.8; }
+    opacity: 0.8;
+    
+  }
+  
   
   .mfp-wrap {
     top: 0;
