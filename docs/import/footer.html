@@ -1,29 +1,21 @@
 <template>
-  <header id="header">
-    <div class="container">
-
-      <div id="logo" class="pull-left">
-        <a href="index.html"><img src="img/logo.png" alt="" title="" /></img></a>
-        
-      </div>
-
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li><a href="rooms.html">Номери</a></li>
-
-          <li class="menu-has-children"><a href="">Про нас</a>
-            <ul>
-              <li><a href="restaurant/index.html">Ресторан</a></li>
-              <li><a href="conferencehall/index.html">Конференц зала</a></li>
-              <li><a href="childrenroom/index.html">Дитяча кімната</a></li>
-              <li><a href="spa/index.html">SPA</a></li>
-            </ul>
-          </li>         
-          <li><a href="gallery/index.html">Галерея</a></li>
-          <li><a href="prices/index.html">Ціни</a></li>
-          <li><a href="contacts/index.php">Контакти</a></li>
-        </ul>
-      </nav>
+  <footer onLoad="renderTime();" class="footer">
+    <div class="social">
+    <div class="icon"><a href="https://www.facebook.com/Vilson-Hotel-Bukovel-1479748108741349"target="_blank"><i class="fab fa-facebook"></i></a></div>
+    <div class="icon"><a href="https://www.instagram.com/vilson_hotel"target="_blank"><i class="fab fa-instagram"></i></a></div>
+    <div class="icon"><a href="mailtoinfo@vilson.com.ua"target="_blank"><i class="fas fa-envelope"></i></a></div>
     </div>
-  </header>
+    <div class="container footer">
+    <div class="info">
+    <p>Тел.+38 095 000 08 90<br> +38 098 000 08 90</p>
+    <p>Наша адреса:<br>Івано-Франківська обл.<br>с. Поляниця,урочище «Вишня» 356 </p>
+    </div>
+    <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+      </script>
+<link rel="stylesheet" type="text/css" media="screen" href="footer/style.css" />
+<script  src="/footer/footer.js"></script>>
+   <div id="clockDisplay" class"container Time"></div>
+<a class="weatherwidget-io" href="https://forecast7.com/en/48d9224d71/ivano-frankivska-oblast/" data-label_1="Bukovel" data-label_2="WEATHER" data-font="Play" data-icons="Climacons Animated" data-theme="gray" data-accent="#586266" data-highcolor="#FFA500" data-suncolor="#FFA500" data-mooncolor="#FFA500" >Bukovel WEATHER</a>
+</footer>
 </template>

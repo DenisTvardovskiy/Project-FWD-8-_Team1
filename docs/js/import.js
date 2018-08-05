@@ -12,4 +12,5 @@ if ('content' in document.createElement('template')) {
   
   // Appending selected node next to element id="import-header"
   document.querySelector('#import-header').appendChild(clone);
+
 }

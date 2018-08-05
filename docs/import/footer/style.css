@@ -1,0 +1,46 @@
+footer{
+	width:100%;
+	height:auto;
+	background:#363E42;
+	text-align:center;
+	}
+	.social{
+		margin-right:80%;
+	}
+	.social a{
+		color:white;
+		font-size:20px;
+		margin-left:10px;
+		margin-top:70px;
+		float:left;
+		
+	}
+	.social a:hover{
+		background:grey;
+		border-radius:30%;
+	
+}
+.container Time{
+	font-family:arial;
+	font-weight:bold;
+	color:red;
+	border: 1px solid green;
+	width:340px;
+	padding: 10px;
+}
+	.info{
+		color:white;
+		margin-left:80%;	
+}
+	.info p{
+	margin-bottom:20px;	
+	font-size:12px;
+	}
+  .copyright{
+	  color:white;
+	  font-size:12px;
+  }
+  .credits{
+	  color:white;
+	  font-size:12px;
+  }
