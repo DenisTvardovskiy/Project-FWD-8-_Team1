@@ -507,7 +507,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 #about {
   background: #fff;
-  padding: 80px 0;
+  padding: 100px 0;
   margin-top:0px;
 }
 .hero-container{
@@ -717,6 +717,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #call-to-action .cta-text {
   color: #fff;
+  text-shadow:1px 1px 1px darkgrey
 }
 
 @media (min-width: 769px) {
