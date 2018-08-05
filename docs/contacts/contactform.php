@@ -62,7 +62,7 @@ if (isset($_POST['mail'])){
     $headers = 'From: '.$mail_form."\r\n".
     'Reply-To: '.$mail_form."\r\n" .
     'X-Mailer: PHP/' . phpversion();
-    @mail($mail_to, $mail_subject, $mail_message, $headers); 
+    mail($mail_to, $mail_subject, $mail_message, $headers); 
 
 
     $servername = "localhost";

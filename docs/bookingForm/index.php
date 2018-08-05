@@ -73,31 +73,33 @@
 			<div class="bookingleft-agile">
 				<h2>ЗАПОВНІТЬ ФОРМУ ДЛЯ БРОНЮВАННЯ</h2>
 				
-					<form action="proces.php" method="get">
+					<form action="proces.php" method="POST">
 						<div class="arrival-agile">
 							<p>Заселення</p>
 						
-							<input placeholder="Оберіть День" class="date" id="datepicker" 
+							<input placeholder="Оберіть День" name="check_in" class="date" id="datepicker" 
 							 type="text" value="" onfocus="this.value = '';" 
 							 onblur="if (this.value == '') {this.value = '';}" required=""/>
 						</div>
 						<div class="departure-agile">
 							<p>Виселення</p>
-							<input placeholder="Оберіть День" class="date" id="datepicker1" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="" />
+							<input placeholder="Оберіть День" name="check_out" class="date" id="datepicker1" 
+							type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '')
+							 {this.value = '';}" required="" />
 						</div>
 						<div class="clear"></div>
 							<div class="guest-agile">
 								<p>Гостей</p>
-									<select>
-										<option value="">2</option>
-										<option value="number">2+1</option>
-										<option value="number">3+1</option>
-										<option value="number">3</option>
+									<select name="amount_persons" type="text">
+										<option value="2">2</option>
+										<option value="2+1">2+1</option>
+										<option value="3+1">3+1</option>
+										<option value="3">3</option>
 									</select>
 							</div>
 							<div class="room-agile">
 								<p>Номери*</p>
-									<select>
+									<select name="room_type" type="text">
 									  <option value="">Номери</option>
 									  <option value="dbl">DBL</option>
 									  <option value="suite">Suite</option>
@@ -107,11 +109,11 @@
 							
 							<div class="room-agile">
 								<p>К-сть Дітей</p>
-							<select>
-							  <option value="">0</option>
-							  <option value="child">1</option>
-							  <option value="child">2</option>
-							  <option value="child">3</option>
+							<select name="amount_children" type="text">
+							  <option value="-">0</option>
+							  <option value="1">1</option>
+							  <option value="2">2</option>
+							  <option value="3">3</option>
 							</select>
 							</div>
 							<div class="name-agile">
